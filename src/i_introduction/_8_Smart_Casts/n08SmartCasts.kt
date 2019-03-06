@@ -12,7 +12,7 @@ class Sum(val left: Expr, val right: Expr) : Expr()
 
 fun eval(e: Expr): Int =
     when (e) {
-        is Num -> todoTask8(e)
+        is Num -> e.to(Num)
         is Sum -> todoTask8(e)
     }
 
