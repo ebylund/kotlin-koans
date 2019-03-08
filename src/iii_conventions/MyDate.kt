@@ -25,7 +25,7 @@ class DateRange(
         override fun next() = next.also {
             next = next.nextDay()
         }
-//            return current.nextDay()
+
         override fun hasNext() = next <= endInclusive
     }
 }
